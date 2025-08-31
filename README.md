@@ -9,6 +9,17 @@ The goal is to understand the difference between both approaches in terms of **i
 
 ---
 
+## 🔨 Build Images
+
+# Build latest
+docker build -t spring-petclinic:latest -f Dockerfile.latest .
+
+# Build multii
+docker build -t spring-petclinic:multii -f Dockerfile.multii .
+
+---
+---
+
 ## 🚀 Running the Containers
 
 After building both images, you can run them like this:
