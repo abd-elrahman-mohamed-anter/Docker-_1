@@ -98,6 +98,8 @@ COPY --from=build /app/target/spring-petclinic-*.jar spring-petclinic.jar
 EXPOSE 8080
 CMD ["java", "-jar", "spring-petclinic.jar"]
 ```
+![latest](dockerfiles.png)
+
 
 ### 🔎 Explanation
 - **Stage 1 (build stage):**
