@@ -17,12 +17,19 @@ After building both images, you can run them like this:
 # Run the "latest" image on port 8077
 docker run -d -p 8077:8080 spring-petclinic:latest
 
+```
+![latest](8077.png)
+```bash
+
 # Run the "multii" image on port 8078
 docker run -d -p 8078:8080 spring-petclinic:multii
-
+```
+![latest](8078.png)
+```bash
 # Check containers
 docker ps
 ```
+
 
 ✅ Example output:
 
@@ -110,8 +117,8 @@ CMD ["java", "-jar", "spring-petclinic.jar"]
 | Final Size          | ~1.17GB                     | ~380MB                   |
 | Push/Pull Speed     | Slow                        | Fast                     |
 | Best For            | Local debugging / testing    | Production deployment     |
-
 ---
+![size comparison](images.png)
 
 ## ✅ Recommendation
 - Use **`multii`** in production → smaller, faster, cleaner.  
@@ -124,6 +131,7 @@ CMD ["java", "-jar", "spring-petclinic.jar"]
 ```bash
 # Build latest
 docker build -t spring-petclinic:latest -f Dockerfile.latest .
+
 
 # Build multii
 docker build -t spring-petclinic:multii -f Dockerfile.multii .
