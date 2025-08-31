@@ -29,7 +29,7 @@ docker run -d -p 8078:8080 spring-petclinic:multii
 # Check containers
 docker ps
 ```
-
+![containers](cont.png)
 
 ✅ Example output:
 
