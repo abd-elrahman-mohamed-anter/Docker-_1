@@ -136,3 +136,5 @@ docker build -t spring-petclinic:latest -f Dockerfile.latest .
 # Build multii
 docker build -t spring-petclinic:multii -f Dockerfile.multii .
 ```
+![run](run.png)
+
